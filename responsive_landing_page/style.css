@@ -1,0 +1,140 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: #f2f2f2;
+  color: #333;
+}
+
+/* .header {
+  /* background-color: #4a90e2; *//*
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+
+  /*for background images*//*
+  background-size: 100% 100%; 
+  box-shadow: 10px 10px 10px gray;
+  animation: slider 30s linear infinite;
+  transition: background-image 3s linear;
+}
+@keyframes slider {
+    0%,16% { background-image: url('/responsive_landing_page/images/herosectionwallpaper/img1.webp'); }
+    17%,33%{ background-image: url('/responsive_landing_page/images/herosectionwallpaper/img2.webp'); }
+    34%,50%{ background-image: url('/responsive_landing_page/images/herosectionwallpaper/img3.jpg'); }
+    51%,66%{ background-image: url('/responsive_landing_page/images/herosectionwallpaper/img4.webp'); }
+    67%,83%{ background-image: url('/responsive_landing_page/images/herosectionwallpaper/img5.avif'); }
+    84%,100%{ background-image: url('/responsive_landing_page/images/herosectionwallpaper/img6.jpg'); }
+} */
+
+.header {
+  position: relative;
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 10px 10px 10px gray;
+}
+
+.bg {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-size: cover;
+  background-position: center;
+  animation: fade 36s infinite;
+  opacity: 0;
+  z-index: 0;
+}
+
+.bg1 { background-image: url('../responsive_landing_page/images/herosectionwallpaper/img1.webp'); animation-delay: 0s; }
+.bg2 { background-image: url('../responsive_landing_page/images/herosectionwallpaper/img2.webp'); animation-delay: 6s; }
+.bg3 { background-image: url('../responsive_landing_page/images/herosectionwallpaper/img3.jpg'); animation-delay: 12s; }
+.bg4 { background-image: url('../responsive_landing_page/images/herosectionwallpaper/img4.webp'); animation-delay: 18s; }
+.bg5 { background-image: url('../responsive_landing_page/images/herosectionwallpaper/img5.avif'); animation-delay: 24s; }
+.bg6 { background-image: url('../responsive_landing_page/images/herosectionwallpaper/img6.jpg'); animation-delay: 30s; }
+
+@keyframes fade {
+  0% { opacity: 0; }
+  8% { opacity: 1; }
+  25% { opacity: 1; }
+  33% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+.header img, 
+.header h1, 
+.header p {
+  position: relative;
+  z-index: 1;
+}
+/*logo*/
+img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 50%;
+  transition: transform 0.3s;
+  display: block;
+  margin: 0 auto;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+
+.header h1 {
+  font-size: 2.5rem;
+}
+.header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 20px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.card {
+  background: white;
+  border-radius: 103px;
+  padding: 30px;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: translateY(-10px);
+}
+.card h2 {
+  color: #4a90e2;
+  margin-bottom: 10px;
+}
+
+
+.footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 25px 20px;
+  font-size: 0.9rem;
+}
+
+
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+

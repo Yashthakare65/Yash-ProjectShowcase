@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yash's Projects</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Light Theme */
+    body {
+      background-color: #ffffff;
+      color: #000000;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    /* Dark Theme */
+    body.dark-mode {
+      background-color: #1e1e1e;
+      color: #ffffff;
+    }
+
+    /* Toggle Button Style */
+    #theme-toggle {
+      padding: 10px 15px;
+      font-size: 14px;
+      background-color: #ddd;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    body.dark-mode #theme-toggle {
+      background-color: #444;
+      color: #fff;
+    }
+
+
+    header {
+      background: #007bff;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      top: 0;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    .projects-section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .projects-grid {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .project-card {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      max-width: 900px;
+      border-radius: 15px;
+      overflow: hidden;
+      background: white;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .project-img {
+      width: 100%;
+      height: 300px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+    body.dark-mode .project-card:hover {
+    box-shadow: 
+    -5px -5px 23px #eb00ff,
+    5px 5px 23px #00f0ff;
+    }
+
+
+    .project-img {
+      height: 300px;
+      background-size: cover;
+      background-position: center;
+
+    }
+
+    .project-content {
+      padding: 1rem;
+    }
+
+    .project-content h3 {
+      margin-bottom: 0.5rem;
+      font-size: 1.3rem;
+      color: #007bff;
+    }
+
+    .project-content p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    footer {
+      background: #007bff;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <button id="theme-toggle">🌙 Dark Mode</button>
+    <h1>Yash's Project Portfolio</h1>
+    <p>Explore my creations — click to open!</p>
+  </header>
+  <section class="projects-section">
+    <div class="projects-grid">
+      <a href="../ProjectLister/DailyTaskManager/index.html" class="project-card" target="_blank">
+        <div class="project-img" style="background-image: url('../ProjectLister/allimgs/taskmanager_img.png');"></div>
+        <div class="project-content">
+          <h3>Daily Task Manager</h3>
+          <p>Organize your day efficiently with my custom-built task manager.</p>
+        </div>
+      </a>
+
+      <a href="../ProjectLister/LightDark_Theme_Toggle/index.html" class="project-card" target="_blank">
+        <div class="project-img" style="background-image: url('../ProjectLister/allimgs/lightdarktoggle2_img.png');"></div>
+        <div class="project-content">
+          <h3>Light/Dark Theme Toggle</h3>
+          <p>Switch between light and dark modes with a smooth toggle.</p>
+        </div>
+      </a>
+
+      <a href="../ProjectLister/personalprofile/index.html" class="project-card" target="_blank">
+        <div class="project-img" style="background-image: url('../ProjectLister/allimgs/personalprofile_img.png');"></div>
+        <div class="project-content">
+          <h3>Personal Profile</h3>
+          <p>A stylish and responsive personal profile webpage.</p>
+        </div>
+      </a>
+
+      <a href="../ProjectLister/responsive_landing_page/index.html" class="project-card" target="_blank">
+        <div class="project-img" style="background-image: url('../ProjectLister/allimgs/responsivepage_img.png');"></div>
+        <div class="project-content">
+          <h3>Responsive Landing Page</h3>
+          <p>Beautiful landing page design for showcasing businesses.</p>
+        </div>
+      </a>
+
+      <a href="../ProjectLister/WheatherApp/index.html" class="project-card" target="_blank">
+        <div class="project-img" style="background-image: url('../ProjectLister/allimgs/whetherapp_img.png');"></div>
+        <div class="project-content">
+          <h3>Weather App</h3>
+          <p>Get real-time weather updates for any city worldwide.</p>
+        </div>
+      </a>
+    </div>
+  </section>
+  <footer>
+    <p>© 2025 Yash Ravi Thakare | All Rights Reserved</p>
+  </footer>
+
+  <script>
+  const toggleButton = document.getElementById("theme-toggle");
+
+  toggleButton.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+
+    if (document.body.classList.contains("dark-mode")) {
+      toggleButton.textContent = "☀️ Light Mode";
+    } else {
+      toggleButton.textContent = "🌙 Dark Mode";
+    }
+  });
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Daily Task Manager</title>
+  <link rel="stylesheet" href="../DailyTaskManager/css/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Daily Task Manager</h1>
+  </header>
+
+  <section id="task-form">
+    <input type="text" id="taskName" placeholder="Task name" />
+    <select id="taskCategory">
+      <option value="Work">Work</option>
+      <option value="Personal">Personal</option>
+      <option value="Shopping">Shopping</option>
+    </select>
+    <input type="date" id="taskDate" />
+    <button id="addTaskBtn">Add Task</button>
+  </section>
+
+  <section id="filters">
+    <button data-filter="All" class="filter-btn active">All</button>
+    <button data-filter="Work" class="filter-btn">Work</button>
+    <button data-filter="Personal" class="filter-btn">Personal</button>
+    <button data-filter="Shopping" class="filter-btn">Shopping</button>
+  </section>
+
+  <main>
+    <div id="taskList"></div>
+  </main>
+
+  <script src="../DailyTaskManager/js/script.js"></script>
+</body>
+</html>

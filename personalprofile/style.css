@@ -1,0 +1,123 @@
+*{
+    margin: 0px;
+    padding:0px;
+  
+}
+#navbar{
+    text-align: center;
+    background-color: rgb(30, 194, 194);
+    padding: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 520;
+    word-spacing: 38px;
+    border: 2px solid rgb(13, 203, 220);
+    border-radius: 2px;
+    box-sizing: border-box;
+    
+    
+}
+.navbar{
+    text-decoration:none;
+}
+
+#section1{
+    background-color: rgb(97, 232, 225);
+    height: 200px;
+    margin: 0 0 12px 0;
+}
+#img {
+  width: 150px;
+  height: 150px;
+  border-radius: 87px;
+  overflow: hidden;
+  margin: 0 auto;
+  text-align: center;
+  
+}
+
+#profileimg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 87px;
+  display: block;
+  
+}
+h1{
+  text-align:center;
+  font-size: 27px;
+  font-weight: 600;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  word-spacing: 2px;
+}
+.middlesection{
+  padding: 2rem 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+#inabout{
+  line-height: 25px;
+}
+#contact h3 {
+  font-size: 26px;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+#endcontact p {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+#endcontact a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+#endcontact a:hover {
+  text-decoration: underline;
+}
+.middlesection{
+  border: 2px solid black;
+  border-radius: 12px;
+  box-shadow: 5px 2px 1px rgba(0,0,0,0.1);
+  background-color: rgb(192, 233, 233);
+  padding: 10px;
+}
+#skills :hover{
+    transform: rotate(1deg) scale(1.05);
+}
+section :hover{
+  transform: scale(1.01);
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.2);
+}
+nav :hover{
+  transform: scale(1.01);
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+footer{
+   text-align: center;
+    background-color: rgb(30, 194, 194);
+    padding: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 520;
+    margin: 12px 0 0 0;
+    width: 100%;
+}
+#bt1,#bt2,#bt3,#bt4{
+  background-color: rgb(153, 248, 242);
+  padding: 7px;
+  border-radius: 12px;
+  visibility: 1;
+}
+#pojimg{
+  overflow: hidden;
+  height: 500px;
+  width: 800px;
+  border-radius: 12px;
+}
