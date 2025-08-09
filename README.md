@@ -6,7 +6,7 @@ Each project demonstrates different web development concepts — from responsive
 ---
 
 ## 📂 Folder Structure
-
+```
 ProjectLister/
 │
 ├── allimges/
@@ -52,11 +52,7 @@ ProjectLister/
 │
 ├── index.html
 └── README.md
-
-yaml
-Copy
-Edit
-
+```
 ---
 
 ## 📌 Projects Overview
@@ -70,7 +66,7 @@ A simple to-do application to manage daily tasks with add/remove functionality.
 - Mark tasks as completed
 
 📸 *Preview:*  
-![Task Manager](allimges/taskmanager_img/sample.png)
+![Task Manager](/allimgs/taskmanager_img.png)
 
 ---
 
@@ -78,7 +74,7 @@ A simple to-do application to manage daily tasks with add/remove functionality.
 A website that allows switching between **light mode** and **dark mode**.
 
 📸 *Preview:*  
-![Light/Dark Toggle](allimges/lightdarktoggle_img/sample.png)
+![Light/Dark Toggle](/allimgs/lightdarktoggle2_img.png)
 
 ---
 
@@ -86,7 +82,7 @@ A website that allows switching between **light mode** and **dark mode**.
 A personal portfolio-style web page.
 
 📸 *Preview:*  
-![Personal Profile](allimges/Personalprofile_img/sample.png)
+![Personal Profile](/allimgs/personalprofile_img.png)
 
 ---
 
@@ -94,7 +90,7 @@ A personal portfolio-style web page.
 A landing page designed to adapt to different screen sizes.
 
 📸 *Preview:*  
-![Responsive Page](allimges/responsivepage_img/sample.png)
+![Responsive Page](/allimgs/responsivepage_img.png)
 
 ---
 
@@ -102,7 +98,7 @@ A landing page designed to adapt to different screen sizes.
 A weather application that uses an API to fetch live weather data.
 
 📸 *Preview:*  
-![Weather App](allimges/whetherapp_img/sample.png)
+![Weather App](/allimgs/whetherapp_img.png)
 
 ---
 
@@ -113,14 +109,6 @@ A weather application that uses an API to fetch live weather data.
 - OpenWeatherMap API (for Weather App)
 
 ---
-
-## 📥 How to Run
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Yashthakare65/Yash-ProjectShowcase.git
-Open any project folder.
-
-Run index.html in your browser.
 
 📬 Contact
 Yash Ravi Thakare
