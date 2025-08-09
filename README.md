@@ -41,7 +41,7 @@ ProjectLister/
 │ │ ├── img1/
 │ │ ├── logo/
 │ │ └── herosectionwallaper/
-│ │ ├── img1to7/
+│ │     ├── img1to7/
 │ ├── index.html
 │ └── style.css
 │
